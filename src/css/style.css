@@ -5,6 +5,66 @@ nav{
 	width: 100%;
 	height: 60px;
 	background: #344051;
+	position: fixed;
+}
+.loader,
+.loader:before,
+.loader:after {
+  background: #65abf8;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: #65abf8;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
 }
 .logo{
 	color: #fff;
@@ -25,18 +85,28 @@ nav{
 	margin-right: 40px;
 	font-size: 16px;
 	text-transform: uppercase;
-
+	animation: menu_comming 0.4s forwards;
+	-webkit- animation: menu_comming 0.4s forwards;
+	-o- animation: menu_comming 0.4s forwards;
+	opacity: 0;
 }
 .first_container{
 	width: 100%;
 	background: url("../img/boy.png") 90% 100%/auto 85% no-repeat  ,url("../img/bg.png") center/cover no-repeat;
-	height: calc(100% - 60px);
+	height: 100%;
 }
 .title_container{
 	float: left ;
 	margin: 434px 0px 0px 403px;
 	color: #2c384a;
 	text-align: center;
+	opacity: 0;
+	animation: title_move 1s ease forwards;
+	-webkit- animation: title_move 1s ease forwards;
+	-o- animation: title_move 1s ease forwards;
+	animation-delay: 2.4s;
+	-webkit- animation-delay: 2.4s;
+	-o- animation-delay: 2.4s;
 }
 .title_container h1{
 	font-size: 60px;
@@ -62,11 +132,12 @@ nav{
 .second_container{
 	width: 100%;
 	background-color: #fff;
-															/* сделать тень */
+														/* сделать тень */
 	height: 720px;
 	text-align: center;
 	background: url("../img/boy2.png") center 230px no-repeat, url("../img/line.png") center 160px no-repeat  ;
 }
+
 .about_me{
 	padding: 110px;
 }
@@ -101,6 +172,7 @@ nav{
 	border-radius: 5px;
 	padding: 10px;
 	color: #79818d;
+
 }
 
 .third_container{
@@ -352,7 +424,14 @@ nav{
 .statistics{
 	height: 497px;
 	width: 100%;
-	background: url("../img/line.png") 50% 160px no-repeat,url("../img/bg3.png") 100% center/cover no-repeat;
+	/*url("../img/line.png") 50% 160px local no-repeat, */
+	background: url("../img/bg3.png") 100% center/cover;
+	background-attachment: fixed;
+	background-size: 1920px 497px;
+}
+.line_img{
+	margin-top: 30px;
+	margin-left: -900px;
 }
 .statistics h4{
 	text-align: center;
@@ -513,4 +592,159 @@ footer p{
 }
 .img6{
 	margin-left: 1207px;
+}
+
+.menu li a{
+	transition: all 0.1s;
+	color: white;
+	transform: scale(1);
+	display: inline-block;
+}
+.menu li a:visited{
+	color: white;
+}
+
+.menu li a:hover{
+	color:  #e88604;
+
+}
+
+.menu li a:active{
+	transform: scale(1.1);	
+}
+
+.title_container input{
+	transition: all 0.2s;
+	transform: scale(1.0);
+}
+.title_container input:hover{
+	background-color: #344051;
+	color: white;
+}
+.title_container input:active{
+	transform: scale(1.1);
+}
+.dnw_btn{
+	transition: all 0.2s;
+	transform: scale(1.0);
+}
+.dnw_btn:hover{
+	background-color: #344051;
+	color: white;
+}
+.dnw_btn:active{
+	transform: scale(1.1);
+}
+.submit{
+	transition: all 0.2s;
+	transform: scale(1.0);
+}
+.submit:hover{
+	background-color: #344051;
+	color: white;
+}
+.submit:active{
+	transform: scale(1.1);
+}
+.message_tome input{
+	transition: all 0.2s;
+	transform: scale(1.0);
+}
+.message_tome input:hover{
+	background-color: #344051;
+	color: white;
+}
+.message_tome input:active{
+	transform: scale(1.1);
+}
+
+.name_project input{
+	transition: all 0.2s;
+	transform: scale(1.0);
+}
+.name_project input:hover{
+	background-color: #3a726d;
+	color: white;
+}
+.name_project input:active{
+	transform: scale(1.1);
+}
+
+.statistics{
+	transition: all 0.3s;
+	transform: scale(1.0);
+}
+
+.clients:hover{
+	transition: all 0.3s;
+	transform: scale(1.1);
+}
+.hours:hover{
+	transition: all 0.3s;
+	transform: scale(1.1);
+}
+.projects:hover{
+	transition: all 0.3s;
+	transform: scale(1.1);
+}
+.nagrad:hover{
+	transition: all 0.3s;
+	transform: scale(1.2);
+}
+
+
+
+
+
+
+
+@keyframes comming{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes menu_comming{
+	from{
+		opacity: 0;
+		margin-top: -80px;
+	}
+	to{
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
+
+@keyframes title_move{
+	from{
+		opacity: 0;
+		margin-left:  -500px;
+	}
+	to{	
+		opacity: 1;
+		margin-left: 403px;
+	}
+}
+
+.logo{
+	animation: comming 2s;
+}
+
+.menu li:nth-child(2){
+	animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+	animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+	animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+	animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+	animation-delay: 2s;
 }
