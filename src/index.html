@@ -6,6 +6,14 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="">
+
+
 </head>
 <body>
 	<div class="loader">loading</div>
@@ -19,25 +27,60 @@
 
 	<header>
 		<nav>
-			<div class="logo">Шамиль</div>
-			<div class="menu"><ul>
-				<li><a href="#">Обо мне</a></li>
-				<li><a href="#">Услуги</a></li>
-				<li><a href="#">Кейсы</a></li>
-				<li><a href="#">Прайс</a></li>
-				<li><a href="#">Отзывы</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xxl-2 col-xl-3 col-lg-3 col-7">
+						<div class="logo">Шамиль</div>
+					</div>
+
+
+					<div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+						<div class="menu">
+							<ul>
+								<li><a href="#">Обо мне</a></li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Кейсы</a></li>
+								<li><a href="#">Прайс</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-5 d-flex d-lg-none d-block flex-column justify-content-center align-items-end">
+						<div class="dropdown">
+
+						  <button class="btn btn-outline-secondary dropdown-toggle white_button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
+						    Кнопка выпадающего списка
+						  </button>
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						    <li><a class="dropdown-item" href="#">Действие</a></li>
+						    <li><a class="dropdown-item" href="#">Другое действие</a></li>
+						    <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+						  </ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
 		</nav>
 	</header>
 
-		<div class="first_container">
-			<div class="title_container">
-				<h1>Привет <br> Lorem, ipsum dolor.</h1>
-				<h4>Фулл стек веб разработчик</h4>
-				<input type="button" value="Обо мне">
-				<input type="button" value="Мои работы">
+		<div class="first_container	">
+			<div class="container h-100">
+				<div class="row align-items-center h-100">
+					<div class="col-lg-6 mt-5 pt-5">
+						<div class="title_container mt-5">
+							<h1>Привет <br> Lorem, ipsum dolor.</h1>
+								<h4><i class="fa fa-css3 custom-css3 fa-spin" aria-hidden="true" style="font-size: 40px;"></i>Фулл стек веб разработчик</h4>
+							<input type="button" value="Обо мне">
+							<input type="button" value="Мои работы">
+						</div>
+					</div>
+				</div>
 			</div>
+			
 		</div>
 
 		<div class="second_container">
@@ -204,6 +247,15 @@
 		<div class="map">
 			
 		</div>
-	</footer>						
+	</footer>
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	<!-- <script src="js/bootstrap.bundle.js"></script>				 -->
 </body>
 </html>
